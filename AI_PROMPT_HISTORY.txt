@@ -1,0 +1,18 @@
+I have a C++ task to implement an LRU (Least Recently Used) cache.
+
+Please help me understand the requirements and design an implementation using std::list and std::unordered_map so that get() and put() operate in O(1) average time.
+
+Requirements:
+- The cache has a fixed positive capacity.
+- get(key) should return the stored value if the key exists, otherwise return -1.
+- Accessing an existing key should make it the most recently used key.
+- put(key, value) should insert a new key or update an existing key.
+- Updating an existing key should also make it the most recently used.
+- When the cache reaches its capacity and a new key is inserted, evict the least recently used key.
+- Throw std::invalid_argument if the capacity is less than or equal to zero.
+- Use C++.
+- Keep the cache implementation in a separate cache.hpp file.
+- Also provide a small main.cpp example demonstrating the expected behavior.
+- Provide tests covering normal eviction, updating an existing key, capacity 1, missing keys, and invalid capacity.
+
+Please explain the design and implementation clearly so I can understand and explain the code myself.
